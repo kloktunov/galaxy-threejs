@@ -3,7 +3,7 @@ import { clamp } from "../utils.js"
 import * as THREE from 'three'
 
 
-const hazeTexture = new THREE.TextureLoader().load('../resources/feathered60.png')
+const hazeTexture = new THREE.TextureLoader().load('resources/feathered60.png')
 const hazeSprite = new THREE.SpriteMaterial({map: hazeTexture, color: 0x0082ff, opacity: HAZE_OPACITY, depthTest: false, depthWrite: false })
 
 export class Haze {
